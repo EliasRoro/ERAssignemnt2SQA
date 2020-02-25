@@ -1,0 +1,6 @@
+C:\Users\elias\Desktop\ERAssignemnt2SQA\obj\Debug\ERAssignemnt2SQA.csprojAssemblyReference.cache
+C:\Users\elias\Desktop\ERAssignemnt2SQA\bin\Debug\ERAssignemnt2SQA.exe.config
+C:\Users\elias\Desktop\ERAssignemnt2SQA\bin\Debug\ERAssignemnt2SQA.exe
+C:\Users\elias\Desktop\ERAssignemnt2SQA\bin\Debug\ERAssignemnt2SQA.pdb
+C:\Users\elias\Desktop\ERAssignemnt2SQA\obj\Debug\ERAssignemnt2SQA.exe
+C:\Users\elias\Desktop\ERAssignemnt2SQA\obj\Debug\ERAssignemnt2SQA.pdb
