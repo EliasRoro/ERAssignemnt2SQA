@@ -1,4 +1,7 @@
-﻿using NUnit.Framework;
+﻿//Elias Roro
+//Assignemnt 2 
+// Due date : 2020-02-27
+using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,6 +20,12 @@ namespace ERAssignemnt2SQA.Test
         readonly string expectedScalene = "This is an scalene triangle!";
 
 
+
+
+        //Testing the analyze method to see if it will correctly check whether three sides form a proper triangle.
+        //Three integers are passed through to the method, and two of the sides added must be greater than the third.
+        //This test will check the second and third integers added compared to the first length
+
         [Test]
         public void Analyze1()
         {
@@ -25,6 +34,8 @@ namespace ERAssignemnt2SQA.Test
             StringAssert.AreEqualIgnoringCase(expectedNoTriangle, TriangleClass.Analyze(ref sides));
         }
 
+        //Testing the analyze method to see if it will return the strong confirming an equilateral triangle.  
+        //All sides must be the same in length for it to return the expected string
         [Test]
         public void Analyze2()
         {
@@ -32,6 +43,9 @@ namespace ERAssignemnt2SQA.Test
 
             StringAssert.AreEqualIgnoringCase(expectedEquilateral, TriangleClass.Analyze(ref sides));
         }
+
+        //Testing the analyze method to see if it will return the strong confirming an equilateral triangle.  
+        //All sides must be the same in length for it to return the expected string
 
         [Test]
         public void Analyze3()
@@ -41,6 +55,9 @@ namespace ERAssignemnt2SQA.Test
             StringAssert.AreEqualIgnoringCase(expectedEquilateral, TriangleClass.Analyze(ref sides));
         }
 
+        //Testing the analyze method to see if it will return the string confirming a isosceles triangle.
+        // This is one of the possibl based on the integers passed through. 
+        //Two sides must be the same in length for the expected string to return
         [Test]
         public void Analyze4()
         {
@@ -49,6 +66,9 @@ namespace ERAssignemnt2SQA.Test
             StringAssert.AreEqualIgnoringCase(expectedIsosceles, TriangleClass.Analyze(ref sides));
         }
 
+        //Testing the analyze method to see if it will return the string confirming a Scalene triangle. 
+        //This is one of the possible based on the integers passed through. 
+        //All sides must be different in length for the expected string to return
         [Test]
         public void Analyze5()
         {
@@ -57,6 +77,9 @@ namespace ERAssignemnt2SQA.Test
             StringAssert.AreEqualIgnoringCase(expectedScalene, TriangleClass.Analyze(ref sides));
         }
 
+        //Testing the analyze method to see if it will return the string confirming a Scalene triangle. 
+        //This is one of the possible based on the integers passed through. 
+        //All sides must be different in length for the expected string to return
         [Test]
         public void Analyze6()
         {
