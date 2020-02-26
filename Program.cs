@@ -10,22 +10,25 @@ namespace ERAssignemnt2SQA
     {
         static void Main(string[] args)
         {
+            if (args is null)
+            {
+                throw new ArgumentNullException(nameof(args));
+            }
+
             int menu = 0;
             List<int> sides = new List<int>();
 
             while (menu != 2)
             {
                 Console.Clear();
-                Console.WriteLine("1. Enter triangle dimensions");
-                Console.WriteLine("2. Exit\n");
+                Console.WriteLine("1.Press 1 to Enter triangle dimensions");
+                Console.WriteLine("2. Press 2 To Exit program\n");
 
                 while (!int.TryParse(Console.ReadLine(), out menu) || menu <= 0 || menu > 2)
                 {
                     Console.WriteLine("\nEnter a Right Number!");
                 }
                 Console.WriteLine();
-
-                int result = 0;
                 switch (menu)
                 {
                     case 1:
@@ -35,15 +38,16 @@ namespace ERAssignemnt2SQA
 
                             while (true)
                             {
-                                if (int.TryParse(Console.ReadLine(), out result))
+
+                                if (int.TryParse(Console.ReadLine(), out int result))
                                 {
                                     sides.Add(result);
                                     break;
                                 }
                                 else
                                 {
-                                    Console.WriteLine("It must be a positive integer!");
-                                    Console.WriteLine("Re-enter integer");
+                                    Console.WriteLine("Please enter positive integer!");
+                                    Console.WriteLine("Enter integer");
                                 }
                             }
                         }

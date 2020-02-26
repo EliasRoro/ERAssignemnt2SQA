@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ERAssignemnt2SQA
 {
-    class TriangleClass
+    public static class TriangleClass
     {
 
         public static string Analyze(ref List<int> sides)
@@ -20,21 +20,21 @@ namespace ERAssignemnt2SQA
             int mediumSide = sides[0];
             sides.Remove(mediumSide);
 
-            string output = "The sides do not form a triangle!";
+            string output = "The sides do not form a Triangle!";
 
             if ((minSide + mediumSide) - maxSide > 0)
             {
                 if (minSide == maxSide)
                 {
-                    output = "This is an equilateral triangle!";
+                    output = "This is an Equilateral triangle!";
                 }
                 else if (minSide == mediumSide || minSide == maxSide || mediumSide == maxSide)
                 {
-                    output = "This is an isosceles triangle!";
+                    output = "This is an Isosceles triangle!";
                 }
                 else
                 {
-                    output = "This is an scalene triangle!";
+                    output = "This is an Scalene triangle!";
                 }
             }
 
